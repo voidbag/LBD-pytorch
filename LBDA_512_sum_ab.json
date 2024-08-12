@@ -1,0 +1,34 @@
+{
+  "name": "LBD",
+  "model_params": {
+    "num_users": 71568,
+    "num_items": 10682,
+    "num_hidden": 512,
+    "upsilon_layer_id": 3,
+    "bin_size": 0.5,
+    "min_rating": 0.5,
+    "max_rating": 5.0,
+    "bias_mode": 1,
+    "split_embeddings": false,
+    "adaptive_edges": true,
+    "bias_initializers": [
+      {
+        "module": "torch.nn.init.ones_",
+        "params": { 
+        }
+      },
+      {
+        "module": "torch.nn.init.ones_",
+        "params": { 
+        }
+      }
+    ],
+    "initializer": {
+      "module": "torch.nn.init.normal_",
+      "params": {
+        "mean": 0.0,
+        "std":  0.1896412639660888
+      }
+    }
+  }
+}

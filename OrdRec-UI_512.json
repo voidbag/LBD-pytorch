@@ -1,0 +1,29 @@
+{
+  "name": "OrdRec",
+  "model_params": {
+    "num_users": 71567,
+    "num_items": 10681,
+    "bin_size": 0.5,
+    "min_rating": 0.5,
+    "max_rating": 5.0,
+    "thresholds_use_item": true,
+    "t1_mode": 2,
+    "beta_mode": 2,
+    "use_biases": true,
+
+    "initializers": {
+			"iid_features": {
+        "config": {
+          "std": 0.001044633559852766
+        },
+        "initializer": "torch.nn.init.normal_"
+      },
+      "uid_features": {
+        "config": {
+          "std": 0.007505376866069988
+        },
+        "initializer": "torch.nn.init.normal_"
+      }
+    } 
+  }
+}
