@@ -23,7 +23,7 @@ parser.add_argument("--dir-output", type=str, default="./output")
 parser.add_argument("--lr", type=float, default=0.001)
 parser.add_argument("--weight-decay", type=float, default=0.0)
 parser.add_argument("--batch-size", type=int, default=8192)
-parser.add_argument("--cross-validation", type=bool, default=True)
+parser.add_argument("--cross-validation", default=True, action=argparse.BooleanOptionalAction)
 parser.add_argument("--model", type=str, default="LBD", choices=["LBD", "OrdRec"])
 parser.add_argument("--model-config-json", type=str, default="./LBDA_512_sum_ab.json")
 
