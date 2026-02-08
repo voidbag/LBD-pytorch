@@ -237,7 +237,7 @@ class BetaBinsMass(nn.Module):
 
     @staticmethod
     def cdf(x, a, b):
-        return torch.special.betainc(x, a, b)
+        return torch.special.betainc(a, b, x)
         # return 1 - (1 - x ** a) ** b
 
     def forward(self, uid, iid, alpha, beta):
@@ -265,7 +265,7 @@ class BetaBinsMassAdaptive(nn.Module):
 
     @staticmethod
     def cdf(x, a, b):
-        return torch.special.betainc(x, a, b)
+        return torch.special.betainc(a, b, x)
 
     def forward(self, uid, iid, alpha, beta):
         uid_bin_size_terms = self.uid_bin_emb(uid)

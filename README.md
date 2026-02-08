@@ -12,7 +12,7 @@ You should build the source in the PR or download docker image for running this 
 
 ## Installation
 ### Pull Docker Image
-`docker pull voidbag/pytorch:2.4.0-cuda12.1-cudnn9-devel-wip-betainc-with-bwd-voidbag-v0.1.0`
+`docker pull voidbag/pytorch:2.7.0a0-cuda12.6-cudnn9-devel-wip-betainc-with-bwd-voidbag-v1.4.0`
 
 ### Install Requirements
 `pip install -r ./requirements.txt`
